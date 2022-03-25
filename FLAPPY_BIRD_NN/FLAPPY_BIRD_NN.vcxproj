@@ -89,6 +89,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\Konrad\Desktop\BIBLIOTEKI\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,25 +143,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Bird.cc" />
-    <ClCompile Include="Main.cc" />
-    <ClCompile Include="Pipes.cc" />
-    <ClCompile Include="PipesManager.cc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Bird.h" />
-    <ClInclude Include="Global.h" />
-    <ClInclude Include="Pipes.h" />
-    <ClInclude Include="PipesManager.h" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="..\..\..\..\Downloads\birds.png" />
+    <Image Include="..\..\..\..\Downloads\Flappy-bird-AI-Main\Source\Resources\Images\Font.png" />
     <Image Include="background.png" />
     <Image Include="bird.png" />
     <Image Include="bird_dead.png" />
     <Image Include="bird_fly.png" />
     <Image Include="ground.png" />
     <Image Include="Pipes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bird.h" />
+    <ClInclude Include="DrawText.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Pipes.h" />
+    <ClInclude Include="PipesManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bird.cpp" />
+    <ClCompile Include="DrawText.cc" />
+    <ClCompile Include="Main.cc" />
+    <ClCompile Include="Pipes.cc" />
+    <ClCompile Include="PipesManager.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

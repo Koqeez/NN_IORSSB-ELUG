@@ -15,34 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Bird.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PipesManager.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Pipes.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Global.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Bird.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Pipes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PipesManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="background.png">
       <Filter>Resource Files</Filter>
     </Image>
@@ -64,5 +36,42 @@
     <Image Include="Pipes.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="..\..\..\..\Downloads\Flappy-bird-AI-Main\Source\Resources\Images\Font.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bird.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PipesManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bird.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawText.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PipesManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

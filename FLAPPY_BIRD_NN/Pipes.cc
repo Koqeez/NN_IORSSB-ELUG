@@ -4,29 +4,55 @@
 #include "Global.h"
 #include "Pipes.h"
 
-Pipes::Pipes(short i_x, unsigned short i_y) :direction(rand()%2), y_movement_timer(PIPE_SPEED), x(i_x), y(i_y) {
+Pipes::Pipes(short i_x, unsigned short i_y) :
+	direction(rand() % 2),
+	x(i_x),
+	y_movement_timer(PIPE_SPEED),
+	y(i_y)
+{
 
 }
-bool Pipes::is_gone() {
+
+bool Pipes::get_direction()
+{
+	return direction;
+}
+
+bool Pipes::is_gone()
+{
 	return x <= -2 * BIRD_SIZE;
 }
 
-void Pipes::draw(sf::RenderWindow& i_window) {
+short Pipes::get_x()
+{
+	return x;
+}
+
+unsigned short Pipes::get_y()
+{
+	return y;
+}
+
+void Pipes::draw(sf::RenderWindow& i_window)
+{
 	sf::Sprite sprite;
 
 	sf::Texture texture;
 	texture.loadFromFile("Pipes.png");
+
 	sprite.setPosition(x, static_cast<float>(y - SCREEN_HEIGHT));
 	sprite.setTexture(texture);
 	sprite.setTextureRect(sf::IntRect(2 * BIRD_SIZE, 0, 2 * BIRD_SIZE, SCREEN_HEIGHT));
 
 	i_window.draw(sprite);
 
+	
 	sprite.setPosition(x, static_cast<float>(GAP_SIZE + y));
 	sprite.setTextureRect(sf::IntRect(0, 0, 2 * BIRD_SIZE, SCREEN_HEIGHT));
 
 	i_window.draw(sprite);
 }
+
 void Pipes::update()
 {
 	x -= BIRD_SPEED;
@@ -39,7 +65,7 @@ void Pipes::update()
 	{
 		direction = 0;
 	}
-
+	
 	if (0 == y_movement_timer)
 	{
 		y_movement_timer = PIPE_SPEED;
